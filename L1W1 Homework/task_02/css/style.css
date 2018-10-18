@@ -2,4 +2,94 @@
 body {
     font-family: Tahoma, Arial, sans-serif;
     font-size: 14px;
+    padding: 17px 33px 27px 31px;
+}
+.clearfix:after {
+    content: '';
+    clear:both;
+    display: block;
+}
+.header {
+    width: 1410px;
+    margin-bottom: 30px;
+}
+.header__Add {
+    background-color: #f3f3f5;
+    border: 1px solid #c4c4c4;
+    height: 224px;
+    width: 330px;
+  
+}
+.header__Add_leftBlock {
+    float: left;
+}
+.header__Add_rightBlock {
+    float: right;
+}
+.header__center {
+    height: 224px;
+    margin: 0 auto;
+    width: 690px;
+}
+.h1Text {
+/*
+    display: inline-block;
+    vertical-align:middle;  
+*/
+    text-align: center;
+}
+.header__imdbLogo {
+    background-color: #f3f3f5;
+    border: 1px solid #c4c4c4;
+    height: 151px;
+/*    width: 690px;*/
+}
+.header__navigation {
+    margin-top: 12px;
+}
+.headMenu {
+    text-align: center;
+}
+.headMenu__item:last-child{
+    margin-right: 0;
+}
+.headMenu__item {
+   
+    display: inline-block;
+    margin-right: 13px;
+}
+.headMenu__link {
+    background-color: #a8a9ad;
+    border: 1px solid #7d7e82;
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    line-height: 61px;
+    text-align: center;
+    text-decoration: none;
+    width: 218px;
+}
+.headMenu__link:hover{
+  background-color: rgb(102, 153, 204);
+  color: rgb(255, 255, 255);
+}
+.navigation {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.navigation__link {
+    border: 1px solid #7d7e82;
+    background-color: #a8a9ad;
+    box-sizing: border-box;
+    color: black;
+    float: left;
+    font-size: 46px;
+    line-height: 72px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 282px;
+}
+.navigation__link:nth-of-type(1n+2) {
+    border-left: none;
 }
