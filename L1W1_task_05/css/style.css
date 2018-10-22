@@ -16,17 +16,25 @@ body {
 }
 .header {
     height: 80px;    
-}
-.header__brand,
-.header__globalNav,
-.header__tools,
-.hero__feature,
-.hero__callToAction,
-.body__feature,
-.body__listing {
+}        
+.header__inBrand,
+.header__inGlobalNav,
+.header__inTools {
     background-color: #cfe2fb;
+    height: 30px;
     text-align: center;
-    
+}
+.hero__inFeature,
+.hero__inCallToAction {
+    background-color: #cfe2fb;
+    height: 60px;
+    text-align: center;
+}
+.body__inFeature,
+.body__inListing {
+    background-color: #cfe2fb;
+    height: 100px;
+    text-align: center;
 }
 .hero {
    height: 100px;
@@ -50,4 +58,47 @@ body {
 }
 .simpleSpan {
     text-align: center;
+}
+@media (max-width: 992px) {
+    .body__feature {
+        padding: 10px;
+    }
+    .hero__inFeature,
+    .hero__inCallToAction {
+        height: 50px;
+    }
+    .body__advertisement {
+        height: 50px;
+    }
+    .body__inFeature,
+    .body__inListing {
+        height: 50px;
+     }
+}
+@media (max-width: 575px) {
+.header__inBrand,
+.header__inGlobalNav,
+.header__inTools {
+    background-color: #cfe2fb;
+    height: 25px;
+    text-align: center;
+}
+.header__inBrand {
+    margin-bottom: 5px;
+}
+.hero__inFeature,
+.hero__inCallToAction {
+    background-color: #cfe2fb;
+    height: 50px;
+    text-align: center;
+}
+.body__inFeature,
+.body__inListing {
+    background-color: #cfe2fb;
+    height: 40px;
+    text-align: center;
+}
+.body__advertisement {
+    height: 20px;
+    margin-bottom: 5px;
 }
