@@ -1,22 +1,53 @@
-
 body {
     font-family: Tahoma, Arial, sans-serif;
     font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
-.row {
-    background-color: #9fc5f8;
-}
-.col-12,
-.col-md-2,
-.col-6,
-.col-md-7,
-.col-6, 
-.col-md-3 {
-    background-color: #cfe2fb;
+.header,
+.hero,
+.advertisement,
+.mainBody,
+.sidebar,
+.footer {
+    background-color:  #9fc5f8;
+    margin-bottom: 10px;
+    
 }
 .header {
-    height: 100px;
+    height: 80px;    
 }
-.header__text {
-    line-height: 45px;
+.header__brand,
+.header__globalNav,
+.header__tools,
+.hero__feature,
+.hero__callToAction,
+.body__feature,
+.body__listing {
+    background-color: #cfe2fb;
+    text-align: center;
+    
+}
+.hero {
+   height: 100px;
+}
+.advertisement,
+.body__advertisement {
+   background-color: #6fa8dc;   
+}
+.mainBody {
+    height: 150px;
+}
+.sidebar {
+    background-color: brown;
+}
+.footer {
+    height: 60px;
+}
+.spanHeader {
+    font-weight: 600;
+    text-align: left;
+}
+.simpleSpan {
+    text-align: center;
 }
