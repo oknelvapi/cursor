@@ -1,0 +1,232 @@
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    padding: 17px 33px 27px 31px;
+    width: 100%;
+}
+.clearfix:after {
+    content: '';
+    clear:both;
+    display: block;
+}
+.header {
+    width: 93%;
+    margin-bottom: 30px;
+}
+.header__Add {
+    background-color: #f3f3f5;
+    border: 1px solid #c4c4c4;
+    height: 224px;
+    width: 23%;
+  
+}
+.header__Add_leftBlock {
+    float: left;
+}
+.header__Add_rightBlock {
+    float: right;
+}
+.header__center {
+    height: 224px;
+    margin: 0 auto;
+    width: 49%;
+}
+.h1Text {
+
+    display: block;
+    vertical-align:middle;  
+
+    text-align: center;
+}
+.header__imdbLogo {
+    background-color: #f3f3f5;
+    border: 1px solid #c4c4c4;
+    height: 151px;
+    width: 100%;
+}
+.headMenu {
+    margin-top: 12px;
+    text-align: center;
+    width: 100%;
+}
+.headMenu__panel {
+    border: 1px solid #7d7e82;
+    background-color: #a8a9ad;
+    box-sizing: border-box;
+    height: 61px;
+    width: 33%;
+
+}
+.headMenu__panel_left {
+    float: left;
+}
+.headMenu__panel_right {
+    float: right;
+}
+.headMenu__panel_center {
+    margin: 0 auto;
+}
+.headMenu__panel:hover{
+    background-color: rgb(102, 153, 204);
+  color: rgb(255, 255, 255);
+}
+/* .headMenu__item:last-child{
+    margin-right: 0;
+}
+.headMenu__item {
+    display: inline-block;
+    margin-right: 1%;
+    width: 32%;
+}
+.headMenu__link {
+    background-color: #a8a9ad;
+    border: 1px solid #7d7e82;
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    line-height: 58px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+.headMenu__link:hover{
+  background-color: rgb(102, 153, 204);
+  color: rgb(255, 255, 255);
+} */
+.navigation {
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 93%;
+}
+.navigation__link {
+    border: 1px solid #7d7e82;
+    background-color: #a8a9ad;
+    box-sizing: border-box;
+    color: black;
+    float: left;
+    font-size: 46px;
+    line-height: 72px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 20%;
+}
+.navigation__link:nth-of-type(1n+2) {
+    border-left: none;
+}
+.navigation__form {
+    background-color: #d1d2d4;
+    box-sizing: border-box;
+    border: 1px solid #afaeb2;
+    height: 105px;
+    width: 93%;
+}
+.navigation__search {
+    font-size: 0;
+    position: relative;
+}
+.navigation__span1 {
+    color: #222325;
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    font-size: 2vw;
+}
+.navigation__search input {
+    font-size: 29px;
+    position: absolute;
+    left: 8.7%;
+    top: 23px;
+    height: 59px;
+    width: 58.4%;
+}
+.navigation__button {
+    background-color: white;
+    color: #222325;
+    padding: 0; 
+    font-size: 30px;
+    border: 1px solid #aaaaad;
+    position: absolute;
+    right: 25.7%;
+    top: 23px;
+    height: 59px;
+    width: 5.5%;
+}
+.navigation__searchAdvanced {
+    float: right;
+    margin-right: 166px;
+    margin-top: 59px;
+}
+.navigation_advance {
+    color: #3a3b3d;
+    font-size: 23px;
+    text-decoration: none;
+}
+.mainSection { 
+    margin-top: 29px;
+    width: 100%;
+}
+.mainSection__h1 {
+    
+    background-color: #d1d2d4;
+    box-sizing: border-box;
+    border: 1px solid  #aaaaad; 
+    font-size: 27px;
+    height: 46px;
+    padding-top: 8px;
+    width: 224px;
+    text-align: center;
+}
+.mainSection__bigBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    margin-bottom: 30px;
+    width: 93%;
+}
+.mainSection__box {
+    background-color: #f3f3f5;
+    height: 253px;
+    width: 24%;
+    border: 1px solid  #aaaaad;
+}
+.mainSection__boxHot {
+    background-color: #d1d2d4;
+    height: 253px;
+    width: 100%;
+    border: 1px solid  #aaaaad;
+}
+.bigSection {
+    height: 824px;
+    width: 93%;
+}
+.leftSection {
+    float: left; 
+    width: 24%;  
+}
+.rightSection {
+    float: right;
+    width: 24%;
+}
+.newsSection {
+/*    margin: 0 auto;*/
+}
+.mainSection__box_news {
+    margin: 0 auto;
+    background-color: #d1d2d4;
+    border: 1px solid  #aaaaad;
+    height: 537px;
+    width: 49%;
+}
+.mainSection__box_marged {
+    margin-bottom: 29px;
+}
+.mainSection__box_add {
+    margin: 0 auto;
+    background-color: #f3f3f5;
+    border: 1px solid  #aaaaad;
+    height: 253px;
+    width: 49%;
+}
