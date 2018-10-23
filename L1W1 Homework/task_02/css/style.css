@@ -90,6 +90,9 @@ body {
     text-transform: uppercase;
     width: 282px;
 }
+.navigation__link:hover {
+       background-color: #7d7e82;
+}
 .navigation__link:nth-of-type(1n+2) {
     border-left: none;
 }
