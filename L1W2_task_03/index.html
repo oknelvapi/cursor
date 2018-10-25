@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = {
+            1: {
+                name: 'Roman',
+                lastName: 'Lurov',
+                otherData: {
+                role: 'student'
+                }
+            },
+            2: {
+                name: 'Ivan',
+                lastName: 'Bondarenko',
+                otherData: {
+                role: 'student'
+                }
+            },
+            3: {
+                name: 'Roman',
+                lastName: 'Lurov',
+                otherData: {
+                role: 'student'
+                }
+            },
+  
+            4: {
+                name: 'Oleg',
+                lastName: 'Murko',
+                otherData: {
+                role: 'student'
+                }
+            },
+            5: {
+                name: 'Kurz',
+                lastName: 'Smith'
+            }
+        };
+        Object.keys(users).forEach(function(key)) {
+        const user = users[key];
+        //}
+        for (var key in user) {
+            console.log('name: ', user.name);
+            console.log('last name: ', user.lastName);     
+            console.log('role: ', user.role);
+        }
+    })
+    </script>
+</body>
+</html> 
