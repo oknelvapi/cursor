@@ -41,19 +41,17 @@
             5: {
                 name: 'Kurz',
                 lastName: 'Smith'
-            },
+            }
         };
-
-        Object.keys(users).forEach(fanction(key) {
-            const user = user{key};
-  
-        if(users) {
-        console.log('name: ', user.name);
-        console.log('last name: ', users.lastName);
-     
-        console.log('role: ', user.otherData.role)
+        Object.keys(users).forEach(function(key)) {
+        const user = users[key];
+        //}
+        for (var key in user) {
+            console.log('name: ', user.name);
+            console.log('last name: ', user.lastName);     
+            console.log('role: ', user.role);
         }
     })
     </script>
 </body>
-</html>
+</html> 
