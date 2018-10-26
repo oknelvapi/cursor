@@ -40,16 +40,19 @@
             },
             5: {
                 name: 'Kurz',
-                lastName: 'Smith'
+                lastName: 'Smith',
+                otherData: {
+                role: 'D.Sc.'
+                }
             },
         };
-        
         Object.keys(users).forEach(function(key) {
             const user = users[key];
             if (user) {
                 console.log('name: ', user.name);
                 console.log('last name: ', user.lastName);     
-                console.log('role: ', user.otherData);
+                console.log('role: ', user.otherData.role);
+
             }
         });
     </script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEMP</title>
+</head>
+<body>
+    
+    <script>
+        function isTriangle(a,b,c) {
+            if (( a && b && c >= 0 ) && ( a + b > c && c + b > a && c + a > b )) {
+                return true;
+            }   else {
+                    return false
+                }
+            
+            
+            
+            
+            // switch (true){
+            //     case ( a && b && c >= 0 ):
+            //     case ( a + b > c && c + b > a && c + a > b ):
+            //         return true;
+            //         break; 
+            //     default: return false
+            // }
+                
+        }
+        console.log(isTriangle(7,-2,2))
+     // population //   
+    // function nbYear(p0, percent, aug, p) {
+    //     var pMid = p0; 
+    //     var years = 0;
+    //     debugger
+    //     while (pMid <= p) {
+    //         years ++;
+    //         pMid = pMid + ( pMid * percent / 100 + aug );
+    //     }
+    //     return years;
+    // }
+    // console.log(nbYear(1500000, 2.5, 10000, 2000000))
+    </script>
+</body>
+</html>
