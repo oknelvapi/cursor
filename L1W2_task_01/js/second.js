@@ -9,6 +9,6 @@ function minMax (arr) {
       minNum = arr[i];
     }
   return ['max: '+maxNum,'\n'+'min: '+minNum];
+  }
 }
-
-alert(minMax([ 5, 58, 995444, -852214 -89, 1, 56987]));
+alert(minMax([ 5, 58, 995444, -852214 -89, 1, 56987]))
