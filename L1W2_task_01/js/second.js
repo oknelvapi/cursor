@@ -8,7 +8,6 @@ function minMax (arr) {
     if (arr[i] <= minNum) {
       minNum = arr[i];
     }
-  }
   return ['max: '+maxNum,'\n'+'min: '+minNum];
 }
 
