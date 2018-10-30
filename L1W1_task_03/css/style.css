@@ -2,4 +2,76 @@
 body {
     font-family: Tahoma, Arial, sans-serif;
     font-size: 14px;
+    width: 100%;
 }
+.bigBox {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    margin: 20px auto;
+    width: 50%;
+}
+.smallBox {
+    align-items: center;
+    background-color: #5E4A43;
+    border: 1px solid black;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    width: 45%;
+}
+.text {
+    color: #FFF3D0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.pulse:hover  {
+    animation-duration: 1s;
+    animation-name: pulse;
+  }
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+
+    25% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    50% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+.shake:hover {
+    animation-duration: .8s;
+    animation-name: shake;
+  }
+@keyframes shake {
+    from,
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    15%,
+    45%,
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    30%,
+    60%,
+    90% {
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  
