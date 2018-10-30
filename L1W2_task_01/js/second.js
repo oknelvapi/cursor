@@ -1,4 +1,3 @@
-
 function minMax (arr) {
   var maxNum = -Infinity;
   var minNum = Infinity;
