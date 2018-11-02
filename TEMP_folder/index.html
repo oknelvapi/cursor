@@ -38,16 +38,63 @@
     // }
     // console.log(nbYear(1500000, 2.5, 10000, 2000000))
 
-    function towerBuilder(nFloors) {
-        var array = [] ;
-        for ( var i = 0; i < nFloor; i++ ) {
-                array.push ( " ".repeat( nFloor-i-1 )+
-                 "*".repeat( 2 * i + 1 )+
-                 " ".repeat( nFloor - i - 1 ));
-        }
-        return array;
-    }
-    towerBuilder(10);
+    // function towerBuilder(nFloors) {
+    //     var array = [] ;
+    //     for ( var i = 0; i < nFloor; i++ ) {
+    //             array.push ( " ".repeat( nFloor-i-1 )+
+    //              "*".repeat( 2 * i + 1 )+
+    //              " ".repeat( nFloor - i - 1 ));
+    //     }
+    //     return array;
+    // }
+    // towerBuilder(10);
+
+
+//     const pigIt = str => str
+// 	.split(' ')
+// 	.map(el => el.match(/[a-z]/i) ? `${el.substr(1)}${el.substr(0,1)}ay` : el)
+//   .join(' ')
+
+
+
+
+    // function pigIt(str){
+    //     var arr = str.split(' ');
+    //     var result = [];
+    //     for (var i = 0 ; i < arr.length; i++) { 
+    //         debugger 
+    //         if (arr[i].match(/[A-Z]/i)) {
+    //             var element = arr[i].substr(1) + arr[i].substr(0,1) + "ay";
+    //             result.push(element);      
+    //         } else {
+    //             var element = arr[i];
+    //             result.push(element); 
+    //         }
+    //         debugger
+    //     }
+    // return result.join(" ");
+    // }
+    
+    // console.log(pigIt('O tempora o mores !'));
+
+   
+const likes = names => {
+  switch (names.length) {
+    case 0:
+      names.splice(0, 1, 'no one likes this');
+      break;
+    case 1:
+      names.splice(1,0, 'likes this');
+      break;
+    case 2:
+      names.splice(1,1, 'and', names[1], 'like this');
+      break;
+    default:
+      names.splice(2,names.length-2, 'and', names.length-2, 'others like this');        
+  }
+  return names.join(' ')
+}
+console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']))
     </script>
 </body>
 </html>
