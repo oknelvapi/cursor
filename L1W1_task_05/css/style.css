@@ -6,12 +6,25 @@ body {
 }
 .header,
 .hero,
-.advertisement,
+.advertisement__inside,
 .mainBody,
-.sidebar,
+.sidebar__inside,
 .footer {
     background-color:  #9fc5f8;
     margin-bottom: 10px;
+    
+}
+.advertisement,
+.sidebar {
+    padding-right: 0;
+    padding-left: 15px;
+}
+.advertisement__inside,
+.sidebar__inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94%;
     
 }
 .header {
@@ -27,7 +40,7 @@ body {
 .hero__inFeature,
 .hero__inCallToAction {
     background-color: #cfe2fb;
-    height: 60px;
+    height: 110px;
     text-align: center;
 }
 .body__inFeature,
@@ -37,17 +50,16 @@ body {
     text-align: center;
 }
 .hero {
-   height: 100px;
+   height: 150px;
 }
-.advertisement,
 .body__advertisement {
    background-color: #6fa8dc;   
 }
 .mainBody {
     height: 150px;
 }
-.sidebar {
-    background-color: brown;
+.sidebar_inside {
+
 }
 .footer {
     height: 60px;
@@ -63,9 +75,14 @@ body {
     .body__feature {
         padding: 10px;
     }
-    .hero__inFeature,
     .hero__inCallToAction {
-        height: 50px;
+        margin-top: 10px;
+    }
+    .hero__inFeature {
+        height: 60px;
+    }
+    .hero__inCallToAction {
+        height: 40px;
     }
     .body__advertisement {
         height: 50px;
@@ -74,6 +91,19 @@ body {
     .body__inListing {
         height: 50px;
      }
+     .sidebar {
+        padding: 0;
+        margin-bottom: 5px;
+        height: 100px;
+     }
+}
+@media (max-width: 700px) {
+    .hero {
+        height: 80px;
+    }
+    .hero__inCallToAction{
+        height: 40px;
+    }
 }
 @media (max-width: 575px) {
 .header__inBrand,
@@ -86,10 +116,13 @@ body {
 .header__inBrand {
     margin-bottom: 5px;
 }
+.hero {
+    height: 60px;
+}
 .hero__inFeature,
 .hero__inCallToAction {
     background-color: #cfe2fb;
-    height: 50px;
+    height: 20px;
     text-align: center;
 }
 .body__inFeature,
