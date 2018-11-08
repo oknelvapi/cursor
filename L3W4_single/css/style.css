@@ -14,3 +14,10 @@ body {
     align-content: space-around;
     margin: 0 auto;
 }
+
+.wrapper__insider {
+    border: 1px solid grey;
+    height: 50px;
+    margin: 2px;
+    width: 50px;
+}
