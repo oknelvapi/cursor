@@ -9,17 +9,16 @@ function createNewChild() {
         
         var childDiv = document.createElement('div');
         wrapperDiv.appendChild(childDiv);
+        
         childDiv.className = "wrapper__insider";
         childDiv.innerHTML = "DIV №"+count;
-        
-        childDiv.style = "width:50px; height:50px; margin: 2px;";
         childDiv.style.backgroundColor = color;
-        childDiv.style.border = "1px solid grey";
+        
         count--;
     }
 }
 function resetDivs() {
-    var myNode = document.getElementsByClassName("wrapper__insider");
+    var myNode = document.getElementById("wrapper");
     while (myNode.firstChild) {
     myNode.removeChild(myNode.firstChild); 
     }
