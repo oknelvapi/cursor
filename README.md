@@ -1,6 +1,4 @@
-# Ihor Pavlenko ![alt text]
-(http://i67.tinypic.com/2zzrsq8.png)
-
+# Ihor Pavlenko
 *There are my cursor's homeworks* 
 
 ### Homework_L1W1:
