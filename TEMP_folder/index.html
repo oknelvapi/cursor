@@ -78,23 +78,41 @@
     // console.log(pigIt('O tempora o mores !'));
 
    
-const likes = names => {
-  switch (names.length) {
-    case 0:
-      names.splice(0, 1, 'no one likes this');
-      break;
-    case 1:
-      names.splice(1,0, 'likes this');
-      break;
-    case 2:
-      names.splice(1,1, 'and', names[1], 'like this');
-      break;
-    default:
-      names.splice(2,names.length-2, 'and', names.length-2, 'others like this');        
+// const likes = names => {
+//   switch (names.length) {
+//     case 0:
+//       names.splice(0, 1, 'no one likes this');
+//       break;
+//     case 1:
+//       names.splice(1,0, 'likes this');
+//       break;
+//     case 2:
+//       names.splice(1,1, 'and', names[1], 'like this');
+//       break;
+//     default:
+//       names.splice(2,names.length-2, 'and', names.length-2, 'others like this');        
+//   }
+//   return names.join(' ')
+// }
+// console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']))
+function Сatalog (mark, volume, price, year) {
+  this.mark = mark;
+  this.volume = volume;
+  this.price = price;
+  this.year = year;
+  this.getTax = function () {
+    return  (parseInt(this.price) * 0.2)+(0.01*parseFloat(this.volume)*parseFloat(this.price));
   }
-  return names.join(' ')
+  debugger
+  this.getDiscount = function () {
+    return (2018-this.year)*0.1*parseInt(this.price);
+  }
 }
-console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']))
+debugger
+var lot1 = new Сatalog("Toyota", "2.5L", "3000$", 2016)
+
+console.log("getTax is: ", lot1.getTax());
+console.log("getDiscount is: ",lot1.getDiscount());
     </script>
 </body>
 </html>
