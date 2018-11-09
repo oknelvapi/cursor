@@ -1,10 +1,10 @@
 # Ihor Pavlenko
 
-There are my cursor's homeworks 
+*There are my cursor's homeworks 
 
 ### Homework_L1W1
 
-https://gist.github.com/e3d0d7c907cdeb2da4cc930a70db107f.git
+[Follow the link](https://gist.github.com/e3d0d7c907cdeb2da4cc930a70db107f.git)
 ***
 
 
