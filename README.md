@@ -1,4 +1,4 @@
-# Ihor Pavlenko [alt text]
+# Ihor Pavlenko ![alt text]
 (http://i67.tinypic.com/2zzrsq8.png)
 
 *There are my cursor's homeworks* 
