@@ -17,9 +17,9 @@
 .
 Additional tasks from  Vlad:
 
- [First task](https://gist.github.com/aba595a2e51f825bc47e17becbe6eb21.git)
- [Second task](https://gist.github.com/dc654fbe28e1b0718ea139b5a85b8b6a.git)
- [Third task](https://gist.github.com/b770fb16cdd9cc50b2f56f27a3c122e5.git)
+ * [First task](https://gist.github.com/aba595a2e51f825bc47e17becbe6eb21.git)
+ * [Second task](https://gist.github.com/dc654fbe28e1b0718ea139b5a85b8b6a.git)
+ * [Third task](https://gist.github.com/b770fb16cdd9cc50b2f56f27a3c122e5.git)
 
 
 ***
