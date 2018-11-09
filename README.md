@@ -1,6 +1,6 @@
 # Ihor Pavlenko
 
-*There are my cursor's homeworks 
+*There are my cursor's homeworks* 
 
 ### Homework_L1W1:
 
