@@ -78,7 +78,11 @@
     // console.log(pigIt('O tempora o mores !'));
 
    
+<<<<<<< HEAD
 // const likes = names => {
+=======
+//    const likes = names => {
+>>>>>>> a79d83f4125fd2e30c82106811570487f97835dd
 //   switch (names.length) {
 //     case 0:
 //       names.splice(0, 1, 'no one likes this');
@@ -89,6 +93,7 @@
 //     case 2:
 //       names.splice(1,1, 'and', names[1], 'like this');
 //       break;
+<<<<<<< HEAD
 //     default:
 //       names.splice(2,names.length-2, 'and', names.length-2, 'others like this');        
 //   }
@@ -114,5 +119,280 @@ var lot1 = new Сatalog("Toyota", "2.5L", "3000$", 2016)
 console.log("getTax is: ", lot1.getTax());
 console.log("getDiscount is: ",lot1.getDiscount());
     </script>
+=======
+//     case 3:
+//       names.splice(2, names.length-2, 'and', names[2], 'like this');
+//       return names.join(' ').replace(/ /, ', ');
+//       break;
+//     default:
+//       names.splice(2, names.length-2, 'and', names.length-2, 'others like this');
+//       return names.join(' ').replace(/ /, ', ');
+//   }
+//   return names.join(' ')
+// }
+// console.log(likes(['Alex', 'Jacob', 'Mark']))
+
+
+// const breackfast = {
+   
+//   oatmeal (volume) {
+//     const promise = new Promise(function(resolve, reject){ 
+//       const timeForOatmeal = 10;
+//       if (!volume){
+//         reject();
+//         return console.log("Залишився голодним :(");
+//       }
+//       setTimeout(() => {
+//         resolve();
+//         console.log('Додано', volume,'гр вівсянки/мюслей');    
+//       }, timeForOatmeal * volume)
+//       console.log('Засипаю в миску вівсянку');
+//     });
+//     return promise;
+//   },
+  
+  
+//   yoghurt (volume) {
+//     const promise = new Promise(function(resolve, reject){
+//       const timeForYoghurt = 10;
+//       if (!volume){
+//         reject();
+//         return console.log("Вдавився сухою вівсянкою :(");
+//       }
+//       setTimeout(() => {
+//         resolve();
+//         console.log('Додано', volume,'мл йогурту');  
+//       }, timeForYoghurt * volume)
+//       console.log('Додаю до вівсянки йогурт');
+//     });
+//     return promise;    
+//   },
+    
+  
+//   addition (volume) {
+//     const promise = new Promise(function(resolve, reject){
+//       const timeForAddition = 7;
+//       if (!volume){
+//         reject();
+//         return console.log("Не смачно, залишився голодним :(");
+//       }
+//       setTimeout(() => {
+//         resolve();
+//         console.log('Додано', volume,'гр банану та журавлини');
+//       }, timeForAddition * volume)
+//       console.log('Додаю банан і журавлину');
+//     });
+//     return promise;
+//   },
+    
+  
+//   coffe (volume) {
+//     const promise = new Promise(function(resolve, reject){ 
+//       const timeForCofee = 10;
+//       if (!volume){
+//         reject();
+//         return console.log("Ранок без кави - зіпсований день");
+//       }
+//       setTimeout(() => {
+//         resolve();
+//         console.log('Зварено', volume,'мл кави');
+//       }, timeForCofee * volume)
+//       console.log('Заварюю каву в кавоварці');
+//     });
+//     return promise;
+//   },
+   
+                                
+//   milk (volume) {
+//     const promise = new Promise(function(resolve, reject){
+//       const timeForMilk = 7;
+//       if (!volume){
+//         reject();
+//         return console.log("Кава без молока? Ні, це не дял мене!");
+//       }
+//       setTimeout(() => {
+//         resolve();
+//         console.log('Додано', volume,'мл молока в каву');
+//       }, timeForMilk * volume)
+//       console.log('Додаю трохи молока в каву');
+//     });
+//     return promise;
+//   },
+    
+//   eating (oatmeal, yoghurt, ddition){
+//     const promise = new Promise(function(resolve, reject){ 
+//       if (oatmeal+yoghurt+ddition < 1000){
+//         reject();
+//         return console.log("Залишився голодним :(");
+//       }
+//       setTimeout(() => {
+//         resolve();
+//         console.log('Поснідав');    
+//       }, 3500)
+
+//       console.log('Починаю снідати');
+//     });
+//     return promise;
+//   }, 
+//   drinking (coffe, milk){
+//     const promise = new Promise(function(resolve, reject){ 
+//       if (coffe + milk < 350){
+//         reject();
+//         return console.log("Ранок без кави - зіпсований день");
+//       }
+//       setTimeout(() => {
+//         resolve();
+//         console.log('Попив каву!');    
+//       }, 3000)
+
+//       console.log('Починаю пити каву');
+//     });
+//     return promise;
+//   }, 
+// }
+
+// breackfast.oatmeal(350)
+// .then(() => {
+//     return breackfast.yoghurt(400);
+// })
+// .then(() => {
+//     return breackfast.addition(200);
+// })
+// .then(() => {
+//     return breackfast.coffe(200);
+// })
+// .then (() => {
+//     return breackfast.eating();
+// })
+// .then (() => {
+//     return breackfast.drinking();
+// })
+// .catch((err) => { 
+// })
+
+
+// class Auditory {
+//     constructor(maxSize = 100, projector = false) {
+//         this.maxSize = maxSize;
+//         this.projector = projector;
+//     }
+//     check() {
+//         return people <= this.maxSize;
+//     }
+//     checkWithProjector() {
+//         return this.check(people) && this.projector;
+//     }
+// }
+
+
+
+
+// const aud1 = new Auditory(30); 
+// const aud2 = new Auditory(70, true);
+// const aud3 = new Auditory(15, true);
+// const people = 18;
+
+// console.log(aud1.check(people)); 
+// console.log(aud2.check(people)); 
+// console.log(aud3.check(people)); 
+// const wrapper = {
+//     input (count) {
+//         const promise = new Promise(function(resolve, reject){ 
+//         if (!count){
+//             reject();
+//             return console.log("Невірне введення");
+//         }
+//         setTimeout(() => {
+//         resolve();
+//             console.log('Зараз викликатиметься 2й Promise');    
+//         }, 1000)
+//         console.log('Початок');
+//         });
+//         return promise;
+//     },
+//     timerOk (count) {
+//         const promise = new Promise(function(resolve, reject){ 
+//             if (!count){
+//             reject();
+//             return console.log("Невірне введення");
+//             } 
+//             setTimeout(() => {
+//    	            console.log("Наступне повідомлення буде надруковано через "
+//                              +count+"сек" )
+//             }, 0)    
+//             // // розпочати повтори с інтервалом 1 сек
+//              const timerId = setInterval(function() {
+//                console.log("тік" );
+//              }, 1000);
+//             // // через 10 сек зупинити повтори:
+//              setTimeout(function() {
+//                clearInterval(timerId);
+//              }, 1000 * count);
+
+//              setTimeout(() => {
+//            	    console.log("Ось це повідомлення!")
+//              }, count * 1000) 
+//         });
+//         return promise;
+//     },
+// }   
+
+// wrapper.input(10)
+// .then (() => {
+//     return wrapper.timerOk(10)
+// })
+
+
+
+// const wrapper = (count) => {
+// 	setTimeout(() => {
+//   	console.log("Наступне повідомлення буде надруковано через "
+//                 +count+"сек" )
+//   }, 0)
+    
+// // розпочати повтори с інтервалом 1 сек
+// const timerId = setInterval(function() {
+//   console.log("тік" );
+// }, 1000);
+
+// // через 10 сек зупинити повтори:
+// setTimeout(function() {
+//   clearInterval(timerId);
+// }, 1000 * count);
+
+//   setTimeout(() => {
+//   	console.log("Ось це повідомлення!")
+//   }, count * 1000)
+// }
+
+function Сatalog(mark, volume, price, year) {
+        this.mark = mark;
+        this.volume = volume;
+        this.price = price;
+        this.year = year;
+}
+//debugger
+Catalog.prototype.getTax = function () {
+  return  (parseInt(this.price) * 0.2)+
+          (0.01*parseFloat(this.volume)*parseFloat(this.price));
+}
+//debugger
+Catalog.prototype.getDiscount = function () {
+  return (2018-this.year)*0.1*parseInt(this.price);
+}
+      
+//debugger
+var lot1 = new Сatalog("Toyota", "2.5L", "3000$", 2016);
+var lot2 = new Сatalog("Nissan", "1.6L", "15000$", 2015);
+
+console.log("getTax is: ", lot1.getTax());
+console.log("getDiscount is: ", lot1.getDiscount());
+
+console.log("getTax is: ", lot2.getTax());
+console.log("getDiscount is: ", lot2.getDiscount());
+
+
+</script>
+>>>>>>> a79d83f4125fd2e30c82106811570487f97835dd
 </body>
 </html>
