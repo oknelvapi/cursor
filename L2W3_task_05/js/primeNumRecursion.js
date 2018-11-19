@@ -1,17 +1,21 @@
-// Ф-ція рекурсії для простих чисел
-const primeRecursion = num => {
-    if ( num == 2 || num == 3 || num == 5 || num == 7) {
-        return num;
-    } else if (num % 2 === 0) {
-        num = primeRecursion (num / 2); 
-    } else if (num % 3) {    
-        num = primeRecursion (num / 3);
-    } else if (anum % 5 ) {
-        num = primeRecursion (num / 5);
-    } else if (anum % 7 ) {
-        num = primeRecursion (num / 7);
-    }   
-    return num;
+function primeRecursion(num) {
+  if (!isPrime(num)) {
+    return primeRecursion(num-1);
+  }else {
+    if (num == 1) {
+      console.log(num);
+    } else {
+      console.log(num);
+      primeRecursion(num-1);
+    }     
+  }
+  function isPrime(num){
+    let d = 2;
+    while ((d * d <= num && (num % d)!= 0)){
+    	d++;
+    } 
+    return (d * d > num)
+  }
 }
-document.write(primeRecursion(10));
 
+primeRecursion(10)
