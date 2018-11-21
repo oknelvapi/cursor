@@ -406,25 +406,39 @@
      
 // }
 // isPrime(20)
-Array.prototype.myReduce = function (arr) {
-     if (!Array.isArray(arr)) {
-        throw new Error("Первый параметр должен быть массивом");
-     }
-     if (typeof callback !== 'function') {
-        throw new Error("Второй параметр должен быть функцией");
-     }
-     let sum = 0;
-     for (let i = 0; i < this.length; i++) {
-       debugger
-         sum += arr(this[i]);
-     }
-     return sum;
- };
- var arr = [1,3,5,-8]
-var arrNew = arr.myReduce(function(element) {
-return element ;
-});
-console.log(arrNew)
+// const requestURL = 'https://test-users-api.herokuapp.com/users/';
+// var request = new XMLHttpRequest();
+// request.open('GET', requestURL, true);
+// request.responseType = 'json';
+// request.send();
+
+// request.onload = function() {
+//     var users = request.response;
+//     showUsers(users);
+//   }
+
+// function showUsers(jsonObj) {
+//     const userList = jsonObj['data'];
+
+//     for (let i = 0; i < userList.length; i++) {
+//         const userField = document.createElement('ul');
+//         const userId = document.createElement('li');
+//         const userName = document.createElement('li');
+//         const userAge = document.createElement('li');
+
+//         userId.textContent = 'Id: '+userList[i].id;
+//         userName.textContent = 'Name: '+userList[i].name;
+//         userAge.textContent = 'Age: '+userList[i].age;
+
+        
+//         userField.className = "main__userField";
+//         main.appendChild(userField);
+
+//         userField.appendChild(userId);
+//         userField.appendChild(userName);
+//         userField.appendChild(userAge);
+//     }
+// }
 </script>
 <script src="js/trash.js"></script>
 </body>
