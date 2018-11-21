@@ -1,0 +1,19 @@
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    width: 100%;
+}
+
+main {
+    margin-top: 10px;
+}
+
+.main__userField{
+    margin: 15px 0;
+
+}
+.main__userField li {
+    margin-top: 5px;
+}
