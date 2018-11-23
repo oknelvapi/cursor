@@ -1,3 +1,7 @@
+//  |---------------------------|
+//  |  XMLHttpRequest method    |
+//  |---------------------------|
+
 window.onload = () => {
     document.querySelector('#btn1').onclick = function () {
         ajaxGet('https://test-users-api.herokuapp.com/users/');
@@ -28,12 +32,23 @@ const ajaxGet = requestURL => {
                 userAge.textContent = 'Age: '+value.age;
                 
                 userField.className = "main__userField";
-                main.appendChild(userField);
+                main__sectionLeft.appendChild(userField);
             
                 userField.appendChild(userId);
                 userField.appendChild(userName);
                 userField.appendChild(userAge);
             })
         }
+    }
+}
+
+
+//  |---------------------------|
+//  |     Async/await method    |
+//  |---------------------------|
+
+window.onload = () => {
+    document.querySelector('#btn2').onclick = function () {
+        ajaxGet('https://test-users-api.herokuapp.com/users/');
     }
 }
