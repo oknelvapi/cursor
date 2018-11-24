@@ -10,11 +10,20 @@ body {
     /* background-color: blueviolet; */
     height: 75vh;
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
 }
 .main__timer {
     background-color: lawngreen;
-    height: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+.main__span {
+    color: darkred;
+    font-size: 8em;
+
 }
 .main__nav {
     background-color: coral;
@@ -23,4 +32,9 @@ body {
     justify-content: center;
     align-items: center;
     align-content: space-around;
+}
+.main__nav button {
+    height: 10vh;
+    margin: .5vh;
+    width: 40vh;
 }

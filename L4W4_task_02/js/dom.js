@@ -10,29 +10,69 @@ function createDom() {
     const main = document.createElement('div');
     const timerBox = document.createElement('div');
     const navBox = document.createElement('div');
+    const span = document.createElement('span');
 
-    const startBtn = document.createElement('button');
-    const pauseBtn = document.createElement('button');
-    const resetBtn = document.createElement('button');
+    const start = document.createElement('button');
+    const pause = document.createElement('button');
+    const reset = document.createElement('button');
 
     wrapper.className = "wrapper";
     document.body.appendChild(wrapper);
     
     main.className = "main";
-    wrapper.insertBefore(main, null);
+    wrapper.appendChild(main);
 
     timerBox.className = "main__timer";
-    main.insertBefore(timerBox, null);
+    main.appendChild(timerBox);
+
+    span.className = "main__span";
+    timerBox.appendChild(span);
+    span.innerHTML = "00:00";
 
     navBox.className = "main__nav";
-    main.insertBefore(navBox, main[1]);
+    main.appendChild(navBox);
 
-    startBtn.className = "main__start";
-    navBox.insertBefore(startBtn, null);
-    pauseBtn.className = "main__pause";
-    navBox.insertBefore(pauseBtn, navBox[1]);
-    resetBtn.className = "main__reset";
-    navBox.insertBefore(resetBtn, navBox[2]);
-}
+    start.className = "main__start";
+    navBox.appendChild(start);
+    start.innerHTML = "start";
+
+    pause.className = "main__pause";
+    navBox.appendChild(pause);
+    pause.innerHTML = "pause";
+
+    reset.className = "main__reset";
+    navBox.appendChild(reset);
+    reset.innerHTML = "reset";
+};
 
 createDom();
+
+var timer = document.querySelector(".main__timer");
+     //debugger
+     setInterval ( () => {
+         timer = parseInt(timer.innerText.match(/\d$/)) +1;
+     }, 1000)
+//console.log(parseInt(timer));
+
+    // function DomCreator (name, type, xclass, parent){
+//     this.name = name;
+//     this.type = type;
+//     this.xclass = xclass;
+//     this.parent = parent;
+// }
+// DomCreator.prototype.createElement = function() {
+//     return this.name = document.createElement(this.type);
+// }
+// DomCreator.prototype.getClass = function() {
+//     return this.name.className = this.xclass;
+// }
+// DomCreator.prototype.getClass = function() {
+//     return this.parent.appendChild(this.name);
+// }
+
+// const wrapper = new DomCreator ('wrapper', 'div', 'wrapper', 'body');
+
+// wrapper.createElement();
+// wrapper.getClass();
+// wrapper.getClass();
+

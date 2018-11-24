@@ -51,7 +51,7 @@ const loadImage = (url, ms) => {
 const main = async () => {
     try {
         await loadImage(url1, 500);
-        await loadImage(url2, 2000);
+        await loadImage(url2, 2000); // тут бало би бути 10сек, але задля пришвидшення виконання поставив 2
         await loadImage(url3, 1000);
     } catch (e) {
         console.log('Unknown error')
