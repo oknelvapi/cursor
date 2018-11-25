@@ -13,7 +13,7 @@
 ***
 
 ### Homework_L1W3:
-.
+[Follow the link](https://gist.github.com/1cb169d644a92dba1b2505b9150bb0fa.git)
 Additional tasks from  Vlad:
 
  * [First task](https://gist.github.com/aba595a2e51f825bc47e17becbe6eb21.git)
