@@ -1,0 +1,23 @@
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+}
+
+.wrap {
+    width: 300px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: space-around;
+    margin: 0 auto;
+}
+
+.wrapper__insider {
+    border: 1px solid grey;
+    height: 50px;
+    margin: 2px;
+    width: 50px;
+}

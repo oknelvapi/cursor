@@ -7,4 +7,5 @@ function getAverage(arr) {
     return result;
   }
 
-alert('result = '+getAverage([ 5, -3, -1, 1, 0]));
+//alert('result = '+getAverage([ 5, -3, -1, 1, 0]));
+alert('result = '+ parseInt(getAverage([1,4,2])));
