@@ -4,7 +4,7 @@ function getAverage(arr) {
       sum = sum + arr[i];
     }
     var result = [sum / arr.length];
-    return result;
+    return parseFloat(result);
   }
 
 //alert('result = '+getAverage([ 5, -3, -1, 1, 0]));

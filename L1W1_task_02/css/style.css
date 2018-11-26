@@ -14,17 +14,17 @@ body {
     width: 93%;
     margin-bottom: 30px;
 }
-.header__add {
+.header__Add {
     background-color: #f3f3f5;
     border: 1px solid #c4c4c4;
     height: 224px;
     width: 23%;
   
 }
-.header__add_leftBlock {
+.header__Add_leftBlock {
     float: left;
 }
-.header__add_rightBlock {
+.header__Add_rightBlock {
     float: right;
 }
 .header__center {
