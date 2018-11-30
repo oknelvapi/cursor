@@ -9,6 +9,13 @@ body {
 main {
     margin-top: 10px;
     width: 50%;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
 }
 nav {
     width: 50%;
@@ -25,10 +32,15 @@ nav {
     font-weight: bold;
     margin-bottom: 5px;
 }
-.main__userField{
-    margin: 15px 0;
+
+.main__userField {
+    margin-bottom: 15px;
 
 }
+
 .main__userField li {
     margin-top: 5px;
+}
+.user {
+    margin-top: 10px; 
 }
