@@ -1,0 +1,29 @@
+
+.header {
+    background-color: #e3f2fd;
+    border-bottom: 2px solid cornflowerblue;
+    margin-bottom: 2vh;
+    /* width: 100%; */
+
+}
+.button__faq {
+    width: 6vh;
+}
+.header h1,
+.header h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main {
+    margin: 0;
+}
+.navbar {
+    height: 50vh;
+}
+.main__create {
+    margin-bottom: 10px;
+}
+.button__create {
+    width: 6vh;
+}

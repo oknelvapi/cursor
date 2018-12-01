@@ -54,6 +54,7 @@ const getUsers = async () => {
     try {
         const users = await request();
         setContent(users);
+        //setSinglContent(users)
     } catch (err) {
         alert(`getUsers func: ${err}`);
     }
@@ -75,9 +76,11 @@ const request = (method = "GET", data = {}) => {
     });
 };
 
-
+const setContent = users => {
+    
+}
+const setSinglContent = users => {
     const sectionRight = document.querySelector("#SectionRight"); 
-        const setSinglContent = users => {
         _.each(users['data'], value => {
         const userDiv = document.createElement("div");
         userDiv.className = "user";
