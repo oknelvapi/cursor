@@ -50,16 +50,17 @@ const ajaxGet = requestURL => {
 
 const URL = "https://test-users-api.herokuapp.com/users/";
 
-const getUsers = async () => {
-    try {
-        const users = await request();
-        setContent(users);
-        //setSinglContent(users)
-    } catch (err) {
-        alert(`getUsers func: ${err}`);
-    }
-}
-
+const btn2 = document.querySelector("#btn2");
+btn2.addEventListener("click", async () =>{
+        try {
+            const users = await request();
+            //setContent(users);
+            setSinglContent(users)
+        } catch (err) {
+            alert(`getUsers func: ${err}`);
+        }
+    
+});
 const request = (method = "GET", data = {}) => {
     const body = method === "GET" ? void 0 : JSON.stringify(data);
     return fetch(`${URL}`, {
@@ -94,5 +95,4 @@ const setSinglContent = users => {
     }
 
 
-const btn2 = document.querySelector("#btn2");
-btn2.addEventListener("click", getUsers);
+

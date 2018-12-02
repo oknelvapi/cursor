@@ -6,17 +6,11 @@
     /* width: 100%; */
 
 }
-.button__faq {
-    width: 6vh;
-}
+
 .header h1,
 .header h2 {
     text-align: center;
     text-transform: uppercase;
-}
-
-.main {
-    margin: 0;
 }
 .navbar {
     height: 50vh;
@@ -24,6 +18,28 @@
 .main__create {
     margin-bottom: 10px;
 }
-.button__create {
-    width: 6vh;
+
+.button__faq,
+.button__create,
+.button__swipe {  
+    width: 3rem;
 }
+.card-img-top {
+    width: 13rem;
+}
+
+.card {
+    width: 13rem;
+    margin: 1%;
+}
+.del {
+    margin-left: 4%;
+}
+
+/* Щоб сторінка не плигала, при появі скролбару: */
+@media screen and (min-width: 500px) {
+    html {
+      margin-left: calc(100vw - 100%);
+      margin-right: 0;
+    }
+  }
