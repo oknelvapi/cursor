@@ -32,7 +32,7 @@ const ajaxGet = requestURL => {
                 userAge.textContent = 'Age: '+value.age;
                 
                 userField.className = "main__userField";
-                main__sectionLeft.appendChild(userField);
+                SectionLeft.appendChild(userField);
             
                 userField.appendChild(userId);
                 userField.appendChild(userName);
@@ -44,11 +44,55 @@ const ajaxGet = requestURL => {
 
 
 //  |---------------------------|
-//  |     Async/await method    |
+//  |         Fetch API         |
 //  |---------------------------|
 
-window.onload = () => {
-    document.querySelector('#btn2').onclick = function () {
-        ajaxGet('https://test-users-api.herokuapp.com/users/');
-    }
+
+const URL = "https://test-users-api.herokuapp.com/users/";
+
+const btn2 = document.querySelector("#btn2");
+btn2.addEventListener("click", async () =>{
+        try {
+            const users = await request();
+            //setContent(users);
+            setSinglContent(users)
+        } catch (err) {
+            alert(`getUsers func: ${err}`);
+        }
+    
+});
+const request = (method = "GET", data = {}) => {
+    const body = method === "GET" ? void 0 : JSON.stringify(data);
+    return fetch(`${URL}`, {
+        method,
+        body,
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+        }
+    })
+    .then((res) => res.json())
+    .catch((err) => {
+        alert(`request func: ${err}`);
+    });
+};
+
+const setContent = users => {
+    
 }
+const setSinglContent = users => {
+    const sectionRight = document.querySelector("#SectionRight"); 
+        _.each(users['data'], value => {
+        const userDiv = document.createElement("div");
+        userDiv.className = "user";
+            userDiv.innerHTML += 
+            `
+            <span>Name: ${value.name}</span> <br />
+            <span>Age: ${value.age}</span> <br /> 
+            `
+        sectionRight.prepend(userDiv);
+        })
+    }
+
+
+

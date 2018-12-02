@@ -1,4 +1,2 @@
-#Trash & Temp:
-TEMP_folder/
-# .gitignore:
-.gitignore
+# Trash || Draft
+/TEMP_folder
