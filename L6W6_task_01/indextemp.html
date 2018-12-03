@@ -24,16 +24,36 @@
             <div class="col-10">
                     <div class="main__create row justify-content-start">
                         <div class="col-4">
-                            <button type="button" class="btn btn-light button__faq" data-toggle="tooltip" data-html="true" title="FAQ">
-                                <img src="img/light-bulb2.svg" alt="what_to_do">
+                            <button type="button" class="btn btn-light button__faq" data-toggle="modal" data-html="true" data-target="#faqModal" title="FAQ">
+                                <img data-toggle="tooltip" data-placement="bottom" title="FAQ" src="img/light-bulb2.svg" alt="what_to_do">
                             </button>
-                            <button type="button" class="btn btn-light button__create" data-toggle="modal" data-target="#exampleModalCenter" data-html="true" title="Create a user">
-                                <img src="img/contract.svg" alt="create">
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <!-- faqModal -->
+                            <div class="modal fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="faqModalTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
+                                <div  class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Info</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    ...
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- End of faqModal -->
+                            <button type="button" class="btn btn-light button__create" data-toggle="modal" data-target="#createModal" data-html="true">
+                                <img data-toggle="tooltip" data-placement="top" title="Create a user" src="img/contract.svg" alt="create">
+                            </button>
+                            <!-- createModal -->
+                            <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div id="modalBox" class="modal-content">
                                     <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLongTitle">Create user</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -45,22 +65,24 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
                                             </div>
-                                            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                            <input id="modal-name" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                                         </div>
                                         <div class="input-group input-group-sm mb-3">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text" id="inputGroup-sizing-sm">Age</span>
                                             </div>
-                                            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                            <input id="modal-age" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button  type="button" id="add-User" class="btn btn-primary" data-dismiss="modal">Create</button>
                                     </div>
                                 </div>
                                 </div>
                             </div>
+                            <!-- End of createModal -->
+
                             <button type="button" class="btn btn-light button__swipe" data-toggle="tooltip" data-html="true" title="Delete the cards">
                                 <img src="img/swipe.svg" alt="delete">
                             </button>
