@@ -82,7 +82,7 @@ const addUser  = async() => {
             age: uage
         });     
         
-        renderOneUser(userResponse);
+        renderOneUser(userResponse.data);
         debugger
     } catch(err) {
         alert(err);
