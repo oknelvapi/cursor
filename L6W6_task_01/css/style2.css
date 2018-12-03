@@ -21,6 +21,7 @@
 
 .button__faq,
 .button__create,
+.editModal,
 .button__swipe {  
     width: 3rem;
 }
