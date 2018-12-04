@@ -126,23 +126,23 @@ const delUser = async function(id){
 //     }
 // }
 
-// debugger
-// const edUser = async function (event) {
-//     const id = this.dataset.id;
-//     debugger
-//     try {
-//         const uname = document.querySelector("#modal-name2").value,
-//               uage = document.querySelector("#modal-age2").value;
-//         const userResponse = await request (`${id}`, 'PUT', {
-//             name: uname,
-//             age: uage
-//         });
-//         users = users.filter((users) => users.id != id);
-//         renderOneUser(userResponse.data);
-//     } catch(err) {
-//         alert(err);
-//     }
-// }
+debugger
+const edUser = async function (event) {
+    const id = this.dataset.id;
+    debugger
+    try {
+        const uname = document.querySelector("#modal-name2").value,
+              uage = document.querySelector("#modal-age2").value;
+        const userResponse = await request (`${id}`, 'PUT', {
+            name: uname,
+            age: uage
+        });
+        users = users.filter((users) => users.id != id);
+        renderOneUser(userResponse.data);
+    } catch(err) {
+        alert(err);
+    }
+}
 
 
 //  |---------------------------|
