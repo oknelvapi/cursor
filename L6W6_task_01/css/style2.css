@@ -2,6 +2,7 @@
 .header {
     background-color: #e3f2fd;
     border-bottom: 2px solid cornflowerblue;
+    /* color: bisque; */
     margin-bottom: 2vh;
     /* width: 100%; */
 
@@ -24,6 +25,10 @@
 .editModal,
 .button__swipe {  
     width: 3rem;
+}
+.panelImg {
+    width: 1.5rem;
+    margin-left: 2%;
 }
 .card-img-top {
     width: 13rem;

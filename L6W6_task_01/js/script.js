@@ -53,6 +53,7 @@ const renderOneUser = (value) => {
     
     btnEdit.setAttribute('data-toggle', 'modal'),
     btnEdit.setAttribute('data-target', '#editModal');
+    btnEdit.setAttribute('data-id', value.id);
 
     cardBox.prepend(userField);
         
@@ -65,8 +66,10 @@ const renderOneUser = (value) => {
     cardBody.appendChild(btnDel);
     
     btnDel.addEventListener('click', delUser.bind(userField, value.id));
-    document.querySelector("#btnEdid").addEventListener('click', editUser.bind(userField, value.id));
-}
+    // document.querySelector("#btnEdit").addEventListener('click', editUser.bind(userField, value.id));
+    document.querySelector("#btnEdit").addEventListener('click', edUser);
+    // document.getElementById("idUserTitle").innerText = value.id;
+}  
 
 //  |---------------------------|
 //  |      Add a new user       |
@@ -82,7 +85,7 @@ const addUser  = async() => {
             age: uage
         });     
         
-        renderOneUser(userResponse);
+        renderOneUser(userResponse.data);
         debugger
     } catch(err) {
         alert(err);
@@ -109,32 +112,38 @@ const delUser = async function(id){
 //  |      Edit a singl user    |
 //  |---------------------------|
 
-// const editUser = (id) => {
-//     const uname = document.querySelector("#modal-name2").value,
-//           uage = document.querySelector("#modal-age2").value;
-//     debugger
-//     fetch(`${id}`, {
-//         method: 'PUT',
-//         body: JSON.stringify({ name: uname, age: uage}),
-//         headers: {
-//             Accept: 'application/json',
-//             'Content-Type': 'application/json',
-//         }
-//     });
+// const editUser  = async function(id) {
+//     try {
+//         const uname = document.querySelector("#modal-name2").value,
+//               uage = document.querySelector("#modal-age2").value;
+//         debugger
+//         await request(`${id}`, 'PUT', {
+//             name: uname,
+//             age: uage
+//         });     
+//     } catch(err) {
+//         alert(err);
+//     }
 // }
-const editUser  = async function(id) {
-    try {
-        const uname = document.querySelector("#modal-name2").value,
-              uage = document.querySelector("#modal-age2").value;
-              debugger
-        await request(`${id}`, 'PUT', {
-            name: uname,
-            age: uage
-        });     
-    } catch(err) {
-        alert(err);
-    }
-}
+
+// debugger
+// const edUser = async function (event) {
+//     const id = this.dataset.id;
+//     debugger
+//     try {
+//         const uname = document.querySelector("#modal-name2").value,
+//               uage = document.querySelector("#modal-age2").value;
+//         const userResponse = await request (`${id}`, 'PUT', {
+//             name: uname,
+//             age: uage
+//         });
+//         users = users.filter((users) => users.id != id);
+//         renderOneUser(userResponse.data);
+//     } catch(err) {
+//         alert(err);
+//     }
+// }
+
 
 //  |---------------------------|
 //  |  Modal windows settings   |

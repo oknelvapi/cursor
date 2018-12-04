@@ -25,7 +25,7 @@
                     <div class="main__create row justify-content-start">
                         <div class="col-4">
                             <button type="button" class="btn btn-light button__faq" data-toggle="modal" data-html="true" data-target="#faqModal" title="FAQ">
-                                <img data-toggle="tooltip" data-placement="bottom" title="FAQ" src="img/light-bulb2.svg" alt="what_to_do">
+                                <img data-toggle="tooltip" data-placement="left" title="FAQ" src="img/light-bulb2.svg" alt="what_to_do">
                             </button>
                             <!-- faqModal -->
                             <div class="modal fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="faqModalTitle" aria-hidden="true">
@@ -38,9 +38,13 @@
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        <a href="https://goo.gl/9rSg8q">View the code</a><br/>
-                                        <p>Щоб створити нового користувача - натисни на позначку з аркушем</p>
-                                        <p>Щоб видалити всі картки зі сторінки - натисни на позначку з мітлою </p>
+                                        <a target="_blank" href="https://goo.gl/9rSg8q">View the code</a>
+                                        <p>Щоб створити нового користувача - натисни на
+                                            <img class="panelImg" title="Create a user" src="img/contract.svg" alt="create">
+                                        </p>
+                                        <p>Щоб видалити всі картки зі сторінки - натисни на
+                                            <img class="panelImg" src="img/swipe.svg" alt="delete">
+                                        </p>
                                         <span></span>
 
                                     </div>
@@ -87,7 +91,7 @@
                             </div>
                             <!-- End of createModal -->
 
-                            <button type="button" class="btn btn-light button__swipe" data-toggle="tooltip" data-html="true" title="Delete the cards">
+                            <button type="button" class="btn btn-light button__swipe" data-toggle="tooltip" data-placement="right" data-html="true" title="Delete the cards">
                                 <img src="img/swipe.svg" alt="delete">
                             </button>
 
@@ -96,7 +100,7 @@
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div id="modalBox" class="modal-content">
                                         <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLongTitle">Edit the user</h5>
+                                        <h5 class="modal-title" id="idUserTitle">Edit the user</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -117,7 +121,7 @@
                                         </div>
                                         <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button  type="button" id="btnEdid" class="btn btn-primary" data-dismiss="modal">Edit</button>
+                                        <button  type="button" id="btnEdit" class="btn btn-primary" data-dismiss="modal">Save</button>
                                         </div>
                                     </div>
                                     </div>
