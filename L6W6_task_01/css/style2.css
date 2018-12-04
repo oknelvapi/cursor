@@ -1,0 +1,51 @@
+
+.header {
+    background-color: #e3f2fd;
+    border-bottom: 2px solid cornflowerblue;
+    /* color: bisque; */
+    margin-bottom: 2vh;
+    /* width: 100%; */
+
+}
+
+.header h1,
+.header h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.navbar {
+    height: 50vh;
+}
+.main__create {
+    margin-bottom: 10px;
+}
+
+.button__faq,
+.button__create,
+.editModal,
+.button__swipe {  
+    width: 3rem;
+}
+.panelImg {
+    width: 1.5rem;
+    margin-left: 2%;
+}
+.card-img-top {
+    width: 13rem;
+}
+
+.card {
+    width: 13rem;
+    margin: 1%;
+}
+.del {
+    margin-left: 4%;
+}
+
+/* Щоб сторінка не плигала, при появі скролбару: */
+@media screen and (min-width: 500px) {
+    html {
+      margin-left: calc(100vw - 100%);
+      margin-right: 0;
+    }
+  }
