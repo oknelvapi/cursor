@@ -4,7 +4,7 @@ const btnXmlh = document.querySelector("#btn-xmlh"),
       btnAsync = document.querySelector("#btn-async"),
       faq = document.querySelector(".button__faq"),
       userCreate = document.querySelector(".button__create"),
-      //btnEdit = document.querySelector("#btn-edit"),
+      btnSave= document.querySelector("#btnSave"),
       cardBox = document.getElementsByClassName("main__cardBox"),
       swipe = document.querySelector(".button__swipe");
 
@@ -23,7 +23,6 @@ const renderUsers = users => {
 //  |---------------------------|
 //  |  Singl user card creator  |
 //  |---------------------------|
-
 const renderOneUser = (value) => {
     const cardBox = document.querySelector("#card-box")
     const userField = document.createElement('div'),
@@ -31,10 +30,8 @@ const renderOneUser = (value) => {
           cardBody = document.createElement('div'),
           userName = document.createElement('h5'),
           userAge = document.createElement('p'),
-          btnEdit = document.createElement('button');
-          btnDel = document.createElement('button');
-    
-    
+          btnEdit = document.createElement('button'),
+          btnDel = document.createElement('button');   
 
     userName.textContent = `Name: ${value.name}`;
     userAge.textContent = `Age: ${value.age}`;
@@ -53,11 +50,9 @@ const renderOneUser = (value) => {
     
     btnEdit.setAttribute('data-toggle', 'modal'),
     btnEdit.setAttribute('data-target', '#editModal');
-    btnEdit.setAttribute('data-id', value.id);
 
     cardBox.prepend(userField);
-        
-        
+              
     userField.appendChild(userImg);
     userField.appendChild(cardBody);
     cardBody.appendChild(userName);
@@ -66,15 +61,13 @@ const renderOneUser = (value) => {
     cardBody.appendChild(btnDel);
     
     btnDel.addEventListener('click', delUser.bind(userField, value.id));
-    // document.querySelector("#btnEdit").addEventListener('click', editUser.bind(userField, value.id));
-    document.querySelector("#btnEdit").addEventListener('click', edUser);
-    // document.getElementById("idUserTitle").innerText = value.id;
+    debugger
+    btnEdit.addEventListener('click', getId.bind(userField, value.id));
 }  
 
 //  |---------------------------|
 //  |      Add a new user       |
 //  |---------------------------|
-
 const addUser  = async() => {
     try {
         const uname = document.querySelector("#modal-name").value,
@@ -100,7 +93,6 @@ document.querySelector("#add-User").addEventListener("click", addUser);
 const delUser = async function(id){
     try {
         await request(`${id}`, 'DELETE')
-        debugger
         this.remove();
     } catch(err) {
         alert(err);
@@ -112,38 +104,22 @@ const delUser = async function(id){
 //  |      Edit a singl user    |
 //  |---------------------------|
 
-// const editUser  = async function(id) {
-//     try {
-//         const uname = document.querySelector("#modal-name2").value,
-//               uage = document.querySelector("#modal-age2").value;
-//         debugger
-//         await request(`${id}`, 'PUT', {
-//             name: uname,
-//             age: uage
-//         });     
-//     } catch(err) {
-//         alert(err);
-//     }
-// }
-
-// debugger
-// const edUser = async function (event) {
-//     const id = this.dataset.id;
-//     debugger
-//     try {
-//         const uname = document.querySelector("#modal-name2").value,
-//               uage = document.querySelector("#modal-age2").value;
-//         const userResponse = await request (`${id}`, 'PUT', {
-//             name: uname,
-//             age: uage
-//         });
-//         users = users.filter((users) => users.id != id);
-//         renderOneUser(userResponse.data);
-//     } catch(err) {
-//         alert(err);
-//     }
-// }
-
+const getId =  async function(id) {
+    try {
+        btnSave.onclick = () => {
+                const uname = document.querySelector("#modal-name2").value;
+                const uage = document.querySelector("#modal-age2").value; 
+                console.log('результат= ', id);  
+                console.log('_______________');
+            };    
+        await request(`${id}`, 'PUT', {
+            name: uname,
+            age: uage
+        });  
+    } catch(err) {
+        alert(err);   
+    }    
+}
 
 //  |---------------------------|
 //  |  Modal windows settings   |
@@ -206,8 +182,6 @@ const request = (endpoint ='.', method = "GET", data = {}) => {
         alert(`request func: ${err}`);
     });
 };
-
-
 
 
 //  |---------------------------|
