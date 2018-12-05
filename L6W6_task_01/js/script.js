@@ -107,14 +107,15 @@ const delUser = async function(id){
 const getId =  async function(id) {
     try {
         btnSave.onclick = () => {
-                const uname = document.querySelector("#modal-name2").value;
-                const uage = document.querySelector("#modal-age2").value; 
+                //const uname = document.querySelector("#modal-name2").value;
+                //const uage = document.querySelector("#modal-age2").value; 
                 console.log('результат= ', id);  
                 console.log('_______________');
-            };    
+            };  
+            debugger  
         await request(`${id}`, 'PUT', {
-            name: uname,
-            age: uage
+            name: this.uname,
+            age: this.uage
         });  
     } catch(err) {
         alert(err);   
