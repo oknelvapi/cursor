@@ -41,7 +41,26 @@
 .del {
     margin-left: 4%;
 }
-
+.footer {
+    background-color: #e3f2fd;
+    border-top: 2px solid cornflowerblue;
+    margin-top: 10px;
+}
+.footer__box {
+    height: 15vh;
+    margin-top: 4%;
+}
+.footer__logo {
+    height: 7vh;
+}
+.footer__box h2 {
+    color: cornflowerblue;
+    font-style: oblique;
+    text-align: right;
+}
+.footer__box h2:hover {
+    color: darkcyan;
+}
 /* Щоб сторінка не плигала, при появі скролбару: */
 @media screen and (min-width: 500px) {
     html {
