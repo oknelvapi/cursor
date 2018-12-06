@@ -61,7 +61,7 @@ const renderOneUser = (value) => {
     cardBody.appendChild(btnDel);
     
     btnDel.addEventListener('click', delUser.bind(userField, value.id));
-    debugger
+
     btnEdit.addEventListener('click', getId.bind(userField, value.id));
 }  
 
@@ -72,14 +72,12 @@ const addUser  = async() => {
     try {
         const uname = document.querySelector("#modal-name").value,
               uage = document.querySelector("#modal-age").value;
-              debugger
         const userResponse = await request('.', 'POST', {
             name: uname,
             age: uage
         });     
         
         renderOneUser(userResponse.data);
-        debugger
     } catch(err) {
         alert(err);
     }
@@ -106,16 +104,17 @@ const delUser = async function(id){
 
 const getId =  async function(id) {
     try {
-        btnSave.onclick = () => {
-                const uname = document.querySelector("#modal-name2").value;
-                const uage = document.querySelector("#modal-age2").value; 
-                console.log('результат= ', id);  
-                console.log('_______________');
-            };    
-        await request(`${id}`, 'PUT', {
-            name: uname,
-            age: uage
-        });  
+        const uname = document.querySelector("#modal-name2").value;
+        const uage = document.querySelector("#modal-age2").value;
+        
+        btnSave.onclick = await function () {    
+            console.log('результат= ', id);  
+            console.log('_______________');
+                request(`${id}`, 'PUT', {
+                    name: uname,
+                    age: uage
+                });  
+            }; 
     } catch(err) {
         alert(err);   
     }    
