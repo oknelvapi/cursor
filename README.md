@@ -25,8 +25,8 @@ Additional tasks from  Vlad:
 
 ### DOM & BOM:
 
-*[BOX Creator](https://oknelvapi.github.io/L3W4_task_01/index.html)
-*[BUTTON](https://oknelvapi.github.io/L4W4_task_01/index.html)
+* [BOX Creator](https://oknelvapi.github.io/L3W4_task_01/index.html)
+* [BUTTON](https://oknelvapi.github.io/L4W4_task_01/index.html)
 
 ***
 
