@@ -22,3 +22,8 @@ Additional tasks from  Vlad:
 
 
 ***
+
+### Homework_L2W3:
+
+[Follow the link](https://gist.github.com/1cb169d644a92dba1b2505b9150bb0fa.git)
+***
