@@ -61,7 +61,6 @@ const renderOneUser = (value) => {
     cardBody.appendChild(btnDel);
     
     btnDel.addEventListener('click', delUser.bind(userField, value.id));
-
     btnEdit.addEventListener('click', getId.bind(userField, value.id));
 }  
 
