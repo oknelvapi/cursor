@@ -12,7 +12,7 @@
 [Follow the link](https://gist.github.com/f29f3416cd86b50c2aaa6ff3cf307011.git)
 ***
 
-### Homework_L1W3:
+### Homework_L2W3:
 [Follow the link](https://gist.github.com/1cb169d644a92dba1b2505b9150bb0fa.git)
 Additional tasks from  Vlad:
 
@@ -23,7 +23,19 @@ Additional tasks from  Vlad:
 
 ***
 
-### Homework_L2W3:
+### DOM & BOM:
 
-[Follow the link](https://gist.github.com/1cb169d644a92dba1b2505b9150bb0fa.git)
+[BOX Creator](https://oknelvapi.github.io/L3W4_task_01/index.html)
+[BUTTON](https://oknelvapi.github.io/L4W4_task_01/index.html)
+
+***
+
+### OOP:
+
+[IN PROCESS](#)
+***
+
+### AJAX & JSON:
+
+[Follow the link](https://oknelvapi.github.io/L6W6_task_01/index.html)
 ***
